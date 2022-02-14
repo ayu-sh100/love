@@ -1,0 +1,227 @@
+<html>
+<head>
+  <title>Love Calculator</title>
+
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<body>
+  <style media="screen">
+  body{
+  background-image: url("images/heart-3293531_960_720.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+
+  p{
+  margin-right: 200px;
+  }
+  h1{
+    color: red;
+    text-align: center;
+    font-family: serif;
+  }
+  span{
+    color: red;
+    text-decoration: underline;
+    font-weight: bolder;
+  }
+  footer{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .one{
+    background-color: white;
+  display: inline-block;
+    margin-top: 100px;
+    margin-left: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom:  20px;
+
+  }
+  .two{
+    margin-left: 200px;
+    color:red;
+    font-size: 50px;
+    margin-right: 200px;
+
+  }
+  .three{
+    color: #ffc600;
+    font-family: monospace;
+    font-size: 15px;
+  }
+  .four{
+    /*display: inline-block;*/
+
+    height: 400px;
+    width: 500px;
+    margin-right: 200;
+  padding-top: 20;
+    padding-left: 20;
+    padding-right: 10;
+  }
+
+  .five{
+
+    height: 200;
+    width: 200;
+    position: absolute;
+    top: 100px;
+    margin-left: 900px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .btn {
+    background: #d9349f;
+    background-image: -webkit-linear-gradient(top, #d9349f, #fa0a0a);
+    background-image: -moz-linear-gradient(top, #d9349f, #fa0a0a);
+    background-image: -ms-linear-gradient(top, #d9349f, #fa0a0a);
+    background-image: -o-linear-gradient(top, #d9349f, #fa0a0a);
+    background-image: linear-gradient(to bottom, #d9349f, #fa0a0a);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+
+  }
+
+  .btn:hover {
+    background: #3cdffc;
+    background-image: -webkit-linear-gradient(top, #3cdffc, #f0e50e);
+    background-image: -moz-linear-gradient(top, #3cdffc, #f0e50e);
+    background-image: -ms-linear-gradient(top, #3cdffc, #f0e50e);
+    background-image: -o-linear-gradient(top, #3cdffc, #f0e50e);
+    background-image: linear-gradient(to bottom, #3cdffc, #f0e50e);
+    text-decoration: none;
+  }
+  .GOD{
+    background-color:#D8D2CB;
+    text-align: center;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 25px;
+  }
+  .center{
+    text-align: center;
+  }
+  .container{
+    margin-top: auto;
+  }
+  #demo{
+    color: #ffc600;
+    text-align: center;
+    margin-top: 30px;
+  }
+  #demo1{
+    color: #ffc600;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  </style>
+  <h1>LOVE CALCULATOR</h1>
+  <div class="four">
+
+
+      <p class="three">
+        When you love someone, you
+        want to find as many ways to
+      show them as possible. But
+      sometimes, simply saying,
+    <span>“I love you” </span>
+    just doesn’t feel like enough.
+     After all,how could three small
+      words—which you tell your partner
+      regularly, as it is—capture the
+      depth and meaning of what you
+      really feel for them?<br />
+
+    No matter your exact
+    <span>relationship</span> status, your soulmate gives you all
+    sorts of warm and fuzzy feelings and you want them to know it. That’s why
+     finding new ways to show how much you care can, like sending them adorable
+      <span>romantic</span> quotes about the love you feel for them, can be so meaningful.
+  </p>
+  </div>
+  <div class="five">
+    <img src="images/1237684.jpg" alt="couple" width="300px" height="300px" />
+  </div>
+
+<div class="container">
+  <h1 id="demo" ></h1>
+  <h1 id="demo1"></h1>
+</div>
+
+  <div class="one">
+    <div>
+
+    <center>
+    <form>
+    <input type="text"  name="yourName" value="" placeholder="Your name" id="name">
+    <label style="font-size:20px">💖</label>
+    <input type="text"  name="loveName" value="" placeholder="Love name" id="lname"><br /><br />
+    </form>
+  </div>
+  <div class="center">
+
+    <button class="btn cal"onclick="check()" >💖 Calculate</button>
+  </div>
+  <div class="center">
+    <br />
+
+  </div>
+
+  <div class="GOD">GOD BLESS YOUR RELATIONSHIP</div>
+</center>
+
+  </div>
+
+
+
+
+<footer class="fot">
+  Ayush@copyright 2022
+</footer>
+<script>
+document.querySelectorAll(".cal")[0].addEventListener("click",function(){
+  var audio = new Audio('90s-love-mashup-instrumentals-bollywood-instrumental-songs-of-90s.mp3');
+  audio.play();
+});
+function check(){
+  var name = document.getElementById('name').value;
+  var lname = document.getElementById('lname').value;
+  if(name == ""){
+   alert('Please enter your name');
+  }else if (name.length <=2 ) {
+   alert('Min lenght is 3')
+  }else if(!isNaN(name)){
+   alert('Numbers are not allowed');
+  }
+  else if(lname == ""){
+   alert('Please enter your love name');
+  }else if (lname.length <=2 ) {
+   alert('Min lenght is 3')
+  }else if(!isNaN(lname)){
+   alert('Numbers are not allowed');
+  }
+  else{
+  var lovdata = Math.random() * 100;
+  lovdata = Math.floor(lovdata);
+
+  }
+  document.getElementById("demo").innerHTML=name + "  " + lname;
+  document.getElementById("demo1").innerHTML=lovdata + "%";
+ }
+
+</script>
+</body>
+</html>
